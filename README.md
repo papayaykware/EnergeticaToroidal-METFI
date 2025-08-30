@@ -43,20 +43,6 @@ Este repositorio contiene estudios, simulaciones y análisis relacionados con la
 
 ---
 
-## Ejemplo de uso
-
-```python
-from simulaciones.toro import ToroEnergia
-
-# Inicializar toro con parámetros internos
-toro = ToroEnergia(conductividad=5.8e7, flujo_inicial=1.0e12)
-
-# Simular distribución energética
-toro.simular_flujo(duracion=1000)
-
-# Graficar resultados
-toro.graficar_flujo()
-
 ## Referencias
 
 METFI: Modelo Electromagnético Toroidal de Forzamiento Interno
@@ -78,3 +64,21 @@ Propongan métodos de visualización de flujos internos
 ## Licencia
 
 MIT License
+
+---
+
+## Ejemplo de uso
+
+```python
+from simulaciones.toro import ToroEnergia
+
+# Inicializar toro con parámetros internos
+toro = ToroEnergia(conductividad=5.8e7, flujo_inicial=1.0e12)
+
+# Simular distribución energética
+toro.simular_flujo(duracion=1000)
+
+# Graficar resultados
+toro.graficar_flujo()
+
+
